@@ -21,6 +21,3 @@ const swiper = new Swiper('.swiper', {
     prevEl: 'swiper-button-prev',
   },
 });
-
-export { accordion };
-export { swiper };
