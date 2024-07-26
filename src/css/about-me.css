@@ -1,10 +1,9 @@
 
 
-.accordion-container-first .ac .accord-text.hidden {
- 
-  display:
-} 
 
+.ac-text {
+    color: #fafafa;
+}
 
 .accordion-container-first .ac .ac-trigger::after {
    content: '🔽';
