@@ -11,9 +11,10 @@ import 'swiper/css/navigation';
  // створив новий екземпляр accordion цієї біліотеки-класу
 const accordion = new Accordion('.accordion-container-first', {
     duration: 600,
-    showMultiple: true,
+    showMultiple: true, 
   }
   );
+ /// accordion.firstelement.open(1)
   // створив новий екземпляр swiper цієї біліотеки-класу
   const swiper = new Swiper('.swiper', {
     modules: [Navigation],

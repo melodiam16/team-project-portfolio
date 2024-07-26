@@ -1,5 +1,32 @@
+body {
+  font-family: "Roboto", sans-serif;
+  color: #fafafa;
+  background-color: #1c1d20;
 
+}
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+ul,li {
+  list-style: none;
+  padding: 0px;
+  margin: 0px;
+}
+
+.btn-accord-ferst {
+  width: 320px;
+}
 .ac-text {
     color: #fafafa;
   }
@@ -16,7 +43,7 @@
   }
   
   .ac.is-active .ac-panel .firstelement {
-  visibility: visible;
+  /* visibility: visible; */
   background-color: rgb(255, 0, 106);
   }
   
@@ -38,8 +65,13 @@
   border: 0.1875em solid #0F1C3F;
   border-radius: 50%;
   box-shadow: 0.375em 0.375em 0 0 rgba(15, 28, 63, 0.125);
-  height: 5em;
-  width: 5em;
+  height: 6em;
+  width: 6em;
+  text-align: center;
+  align-items: center;
+  padding-top: 10px;
+  padding: 10px;
+  margin: 10px;
   } 
   
   
