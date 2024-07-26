@@ -1,0 +1,45 @@
+
+
+
+.ac-text {
+    color: #fafafa;
+}
+
+.accordion-container-first .ac .ac-trigger::after {
+   content: '🔽';
+ }
+ 
+.accordion-container-first .ac.is-active>.ac-header .ac-trigger::after {
+  content: '🔼';
+ }
+ .ac.is-active .ac-panel {
+  background-color: aqua;
+ }
+
+ .ac.is-active .ac-panel .firstelement {
+  visibility: visible;
+  background-color: rgb(255, 0, 106);
+ }
+
+ .accordion-container-first .ac .ac-trigger:hover
+ {
+  background-color: #6cff6c;
+}
+
+.container-swiper-first {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+
+/* це створення круга в середині поля */
+
+ .circle {
+  background: #456BD9;
+  border: 0.1875em solid #0F1C3F;
+  border-radius: 50%;
+  box-shadow: 0.375em 0.375em 0 0 rgba(15, 28, 63, 0.125);
+  height: 5em;
+  width: 5em;
+} 
+
