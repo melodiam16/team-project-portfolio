@@ -15,6 +15,7 @@ const accordion = new Accordion('.accordion-container-first', {
 // створив новий екземпляр swiper цієї біліотеки-класу
 
 const swiper = new Swiper('.mySwiper', {
+  addSlidesAfter: 6,
   modules: [Navigation],
   speed: 500,
   navigation: {
