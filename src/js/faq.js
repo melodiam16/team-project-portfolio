@@ -1,4 +1,4 @@
-import Accordion from 'accordion-js';
+import Accordion from 'Accordion-js';
 import 'accordion-js/dist/accordion.min.css';
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -7,4 +7,4 @@ document.addEventListener('DOMContentLoaded', () => {
     showMultiple: false,
   });
 });
-export { accordion };
+export { Accordion };
