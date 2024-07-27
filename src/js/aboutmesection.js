@@ -9,23 +9,20 @@ import 'swiper/css/navigation';
 
 // створив новий екземпляр accordion цієї біліотеки-класу
 const accordion = new Accordion('.accordion-container-first', {
+  duration: 600,
+  showMultiple: true,
+});
+// створив новий екземпляр swiper цієї біліотеки-класу
 
-    duration: 600,
-    showMultiple: true,
-  }
-  );
-  // створив новий екземпляр swiper цієї біліотеки-класу
-  
-  const swiper = new Swiper('.mySwiper', {
-    modules: [Navigation],
-     speed: 500,
-     navigation: {
-      nextEl: '.swiper-button-next',
-      prevEl: '.swiper-button-prev',
-    },
-  });
+const swiper = new Swiper('.mySwiper', {
+  modules: [Navigation],
+  speed: 500,
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+});
 
-  // експорт моїх екземплярів бібліотек до кореневої папки main.js
-  export {accordion};
-  export {swiper};
-
+// експорт моїх екземплярів бібліотек до кореневої папки main.js
+export { accordion };
+export { swiper };
