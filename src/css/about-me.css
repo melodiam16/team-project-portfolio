@@ -4,6 +4,19 @@ section {
 .container-accordion-swiper {
   min-width: 320px;
 }
+<<<<<<< Updated upstream
+=======
+/* 
+.container-first-accord {
+  padding: 16px;
+  margin: 0px;
+}
+
+.container-first-swipe {
+  padding: 16px;
+  margin: 0px;
+} */
+>>>>>>> Stashed changes
 
 .accordion-container-first .ac .ac-panel .ac-text {
   font-weight: 500;
@@ -47,7 +60,7 @@ section {
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
-  width: 320px;
+  min-width: 320px;
   height: 200px;
 }
 /* це створення круга в середині якого текс з скілами */
@@ -82,9 +95,9 @@ section {
   padding-bottom: 48px;
   margin-top: 10px;
   margin-bottom: 10px;
-  width: 100%;
+  min-width: 320px;
   position: relative;
-  height: 100%;
+  height: 200px;
 }
 
 .swiper-slide {
@@ -93,3 +106,15 @@ section {
   justify-content: center;
   position: relative;
 }
+/* 
+.swiper-css-blok-ul {
+  min-width: 320px;
+  height: 200px;
+}
+
+.swiper-css-blok {
+  width: 200px;
+  height: 198px;
+  margin: 0px;
+  padding: 0px;
+} */
