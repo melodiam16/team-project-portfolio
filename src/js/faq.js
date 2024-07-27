@@ -7,4 +7,4 @@ document.addEventListener('DOMContentLoaded', () => {
     showMultiple: false,
   });
 });
-export { accordion };
+export { Accordion };
