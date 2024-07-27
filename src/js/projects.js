@@ -16,16 +16,20 @@ let swiper = new Swiper('.swiper-container', {
             mousewheel: true,
             on: {
                 slideChange: function () {
-                    let nextButton = document.querySelector('.swiper-button-next');
-                    let prevButton = document.querySelector('.swiper-button-prev');
+                    // Оновлюємо статус кнопок навігації
+                    var nextButton = document.querySelector('.swiper-button-next');
+                    var prevButton = document.querySelector('.swiper-button-prev');
                     nextButton.classList.toggle('swiper-button-disabled', !swiper.isEnd);
                     prevButton.classList.toggle('swiper-button-disabled', !swiper.isBeginning);
                 },
                 init: function () {
-                    let nextButton = document.querySelector('.swiper-button-next');
-                    let prevButton = document.querySelector('.swiper-button-prev');
+                    // Оновлюємо статус кнопок при ініціалізації
+                    var nextButton = document.querySelector('.swiper-button-next');
+                    var prevButton = document.querySelector('.swiper-button-prev');
                     nextButton.classList.toggle('swiper-button-disabled', !swiper.isEnd);
                     prevButton.classList.toggle('swiper-button-disabled', !swiper.isBeginning);
                 }
             }
         });
+
+
