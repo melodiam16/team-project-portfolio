@@ -10,3 +10,5 @@ import './js/reviews';
 // footer
 import './js/modal-close-button';
 import './js/footer-fetch-api';
+
+import { mySwiper } from './js/projects';
