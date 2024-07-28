@@ -30,7 +30,7 @@
 
 .wrap_1 {
     background: #fafafa;
-    height: 417px;
+    height: 625px;
 }
 
 .wrap_text {
@@ -81,6 +81,7 @@
     border-radius: 0 0 24px 24px;
     background: #242527;
     padding: 100px 16px;
+    height: 625px;
 }
 
 .project-img {
