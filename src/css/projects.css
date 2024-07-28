@@ -1,6 +1,13 @@
+.swiper {
+    border-radius: 24px;
+    max-height: 812px;
+    max-width: 320px;
+}
+
 .projects-container {
     margin: 64px 16px;
 }
+
 
 .projects {
     font-weight: 600;
@@ -12,6 +19,7 @@
 }
 
 .swiper-slide {
+    min-width: 320px;
     max-height: 812px;
 }
 
@@ -21,11 +29,15 @@
 }
 
 .wrap_text {
+    margin: 0 auto;
     display: flex;
     flex-wrap: wrap;
-    margin: 0 32px;
-    gap: 6px;
-    padding: 32px 0;
+    min-width: 279px;
+
+    max-height: 96px;
+    padding: 32px 0 0;
+    margin: 0 32px 96px;
+    gap: 6px 6px;
 }
 
 .text {
@@ -45,7 +57,7 @@
     line-height: 1.16;
     letter-spacing: -0.03em;
     color: #1c1d20;
-    margin: 0 32px 45px;
+    margin: 0 32px 45px 32px;
 }
 
 .btn {
@@ -57,19 +69,28 @@
     background: #ed3b44;
     margin-left: 32px;
     margin-bottom: 32px;
+    padding: 18px 50px;
 }
 
 .wrap_2 {
+    border-radius: 0 0 24px 24px;
     background: #242527;
     padding: 100px 16px;
-    border-radius: 0 0 24px 24px;
 }
 
 .project-img {
     width: 100%;
+    width: 311px;
+    height: 195px;
 }
 
-/* Medium screens (Tablets) */
+.wrap-btn {
+    justify-content: center;
+    display: flex;
+    margin-top: 32px;
+    gap: 12px;
+}
+
 @media only screen and (min-width: 768px) {
     .projects-container {
         margin: 96px 32px;
@@ -78,10 +99,12 @@
     .swiper {
         max-width: 1440px;
     }
+    
 
     .project-img {
         margin: 0 auto;
         width: 614px;
+        height: 385px;
     }
 
     .swiper-slide {
@@ -90,11 +113,14 @@
     }
 
     .wrap_2 {
+        border-radius: 0 0 24px 24px;
+        background: #242527;
         padding: 120px 45px;
     }
 
     .title {
         font-size: 44px;
+        line-height: 1;
     }
 
     .wrap-btn {
@@ -103,10 +129,15 @@
     }
 }
 
-/* Large screens (Desktops) */
 @media only screen and (min-width: 1440px) {
     .swiper {
         min-width: 1440px;
+    }
+
+    .project-box {
+        display: flex;
+        flex-direction: row;
+        gap: 0;
     }
 
     .swiper-slide {
@@ -118,13 +149,16 @@
     .title {
         margin: 223px 130px 50px 64px;
         font-size: 44px;
+        line-height: 1;
     }
+
 
     .btn {
         margin-left: 64px;
     }
 
     .wrap_1 {
+        background: #fafafa;
         width: 688px;
         height: 625px;
         border-radius: 0 0 0 24px;
@@ -132,8 +166,8 @@
 
     .wrap_2 {
         width: 688px;
-        height: 625px;
+        border-radius: 0 24px 24px 0px;
+        background: #242527;
         padding: 100px 16px;
-        border-radius: 0 24px 24px 0;
     }
 }

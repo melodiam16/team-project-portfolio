@@ -29,7 +29,7 @@ function upSwiperSlideDisplay() {
 upSwiperSlideDisplay();
 window.addEventListener('resize', upSwiperSlideDisplay);
 
-export const Swiper = new Swiper('.swiper', {
+export const mySwiper = new Swiper('.swiper', {
   slidesPerView: 3,
   spaceBetween: 30,
   loop: false,
