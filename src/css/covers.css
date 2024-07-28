@@ -1,0 +1,59 @@
+.covers {
+    min-width: 320px;
+    height: 508px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-image: url(../img/covers/bg-mobile.png);
+  }
+  body {
+    margin: 0;
+  }
+  *,
+  *::before,
+  *::after {
+    box-sizing: border-box;
+  }
+  .covers-content {
+    position: relative;
+  }
+  .marquee {
+    position: absolute;
+    right: -800px;
+    left: 0;
+    height: 508px;
+    overflow: hidden;
+  }
+  
+  .marquee-inner {
+    display: flex;
+    transform: rotate(16deg);
+    margin: 40px;
+    bottom: 0;
+  }
+  
+  .marquee-line {
+    flex-shrink: 0;
+    padding-top: 20px;
+    margin-right: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: calc(100% / 4);
+    white-space: nowrap;
+  }
+  .js-marquee-line {
+    animation-name: marqueeLine;
+    animation-duration: 10s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+  }
+  @keyframes marqueeLine {
+    from {
+      transform: translateX(-20%);
+    }
+  
+    to {
+      transform: translateX(-180%);
+    }
+  }
