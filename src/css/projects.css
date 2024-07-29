@@ -137,11 +137,11 @@
         min-width: 1440px;
     }
 
-         .project-box {
-             display: flex;
-             flex-direction: row;
-             gap: 0;
-         }
+    .project-box {
+        display: flex;
+        flex-direction: row;
+        gap: 0;
+    }
 
     .swiper-slide {
         display: flex;
