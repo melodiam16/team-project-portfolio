@@ -1,15 +1,10 @@
+ /* новий 1 вар */
+
+ 
 .container-accordion-swiper {
-  width: 320px;
-}
-
-.container-first-accord {
-  padding: 16px;
-  margin: 0px;
-}
-
-.container-first-swipe {
-  padding: 16px;
-  margin: 0px;
+  min-width: 320px;
+  margin-left: 16px;
+  margin-right: 16px;
 }
 
 .accordion-container-first .ac .ac-panel .ac-text {
@@ -20,6 +15,17 @@
   color: #fafafa;
 }
 
+  .ac .ac-trigger {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  width: 36px;
+  height: 36px;
+  background-color: inherit;
+  border: 1px solid rgba(250, 250, 250, 0.2);
+  }
+ 
 .accordion-container-first .ac .ac-trigger {
   font-weight: 600;
   font-size: 16px;
@@ -28,79 +34,190 @@
   text-transform: uppercase;
   color: rgba(250, 250, 250, 0.4);
   background-color: rgb(53, 55, 71);
-}
+}  
 .accordion-container-first .ac .ac-trigger::after {
-  content: '🔽';
-}
+   content: '⇩'; 
+} 
 
 .accordion-container-first .ac.is-active > .ac-header .ac-trigger::after {
-  content: '🔼';
-}
+  content: '⇧';
+} 
 .ac.is-active .ac-panel {
   background-color: rgb(53, 71, 71);
 }
 
-/* .ac.is-active .ac-panel .firstelement {
-  visibility: visible;
-  background-color: rgb(255, 0, 106);
-  } */
-
 .accordion-container-first .ac .ac-trigger:hover {
   background-color: #6cd0ff;
-}
+} 
+.ac-panel {
+  height: 0;
+} 
+.opened.ac-panel {
+  height: auto;
+} 
 
-.container-swiper-first {
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
-}
-.section-swiper-first {
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
-  width: 320px;
-  height: 200px;
-}
-/* це створення круга в середині якого текс з скілами */
 
-.circle {
-  background: #ed3b44;
-  border-radius: 50%;
-  box-shadow: 0.375em 0.375em 0 0 rgba(15, 28, 63, 0.125);
-  height: 6em;
-  width: 6em;
-  border: 2px solid #fff;
-  display: inline-block;
-  padding: 10px;
-  color: #fafafa;
-  text-align: center;
-  line-height: 80px;
-  font-size: 14px;
-  /* width: 130px;
-  height: 130px; */
-}
-
-.container-first-swipeses {
-  min-width: 320px;
-  height: 200px;
-  margin: auto;
-  padding: 0px;
-  margin-left: 16px;
-}
-
-.swiper-container {
-  padding-top: 48px;
-  padding-bottom: 48px;
-  margin-top: 10px;
-  margin-bottom: 10px;
+/* це стилі свайпера та створення круга в середині якого текс зі скілами */
+  .about-swiper {
   width: 100%;
-  position: relative;
-  height: 100%;
-}
-
-.swiper-slide {
+  height: 130px;
+  }
+  .about-swiper-wrapper {
+  .about-swiper-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 130px;
+  border-radius: 50%;
+  background-color: inherit;
+  border: 1px solid rgba(250, 250, 250, 0.4);
+  }
+  }
+  .container.accordion-container {
+  margin-bottom: 32px;
+  }
+  .about-wrapper {
   display: flex;
   align-items: center;
+  justify-content: space-between;
+  }
+  .about-swiper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  overflow: hidden;
+  width: 260px;
+  .button-next {
+  display: inline-flex;
+  
+  }
+}
+  
+  .about-swiper-wrapper {
+  .accent-color {
+  background-color: #ed3b44;
+  border: none;
+  }
+  }
+  .swiper-slide-title {
+  display: flex;
   justify-content: center;
-  position: relative;
+  align-items: center;
+  color: #fafafa;
+  text-align: center;
+  }
+  .about-swiper-wrapper {
+  display: flex;
+  align-items: center;
+  }
+  .button-next {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: inherit;
+  border: none;
+  border-radius: 50%;
+  }
+  .icon-next {
+  width: 28px;
+  height: 28px;
+  stroke: #fafafa;
+  fill: none;
+  transform: rotate(180deg);
+  }
+  .button-next:disabled .icon-next {
+  stroke: #3b3b3b;
+  }
+  .icon-arrow {
+  width: 18px;
+  height: 18px;
+  }
+  @media screen and (min-width: 768px) {
+  .accordion {
+  .ac-item {
+  padding: 32px 0;
+  }
+  }
+  .accordion {
+  .ac .ac-trigger {
+  width: 40px;
+  height: 40px;
+  }
+  .ac .ac-trigger:hover,
+  .ac .ac-trigger:focus {
+  background: rgba(255, 255, 255, 0.1);
+  }
+  }
+  .icon-arrow {
+  width: 20px;
+  height: 20px;
+  }
+  .about-swiper {
+  height: 200px;
+  padding: 0;
+  }
+  .container.accordion-container {
+  margin-bottom: 64px;
+  }
+  .about-swiper-wrapper {
+  .about-swiper-slide {
+  height: 200px;
+  }
+  }
+  .about-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  }
+  .about-swiper {
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  width: 600px;
+  .button-next {
+  display: inline-flex;
+  }
+  }
+  .button-next {
+  padding: 0;
+  }
+  .icon-next {
+  width: 40px;
+  height: 40px;
+  }
+  }
+  @media screen and (min-width: 1440px){ .container.accordion-container {
+  margin-bottom: 96px;
+  }
+  .about-panel {
+  width: 612px;
+  height: 100%;
+  align-self: flex-end;
+  }
+  .ac-item {
+  display: flex;
+  flex-direction: column;
+  padding: 32px;
+  }
+  .about-panel-summary {
+  gap: 32px;
+  }
+  .about-swiper {
+  width: 100%;
+  height: 200px;
+  padding: 0;
+  }
+  .button-next {
+  margin-right: 32px;
+  }
+  .about-swiper {
+  display: flex;
+  align-items: center;
+  gap: 72px;
+  }
+  .about-wrapper {
+  .button-next {
+  display: inline-flex;
+  }
+  }
 }
