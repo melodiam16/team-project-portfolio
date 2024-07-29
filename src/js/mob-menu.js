@@ -2,6 +2,8 @@ document.addEventListener('DOMContentLoaded', () => {
     const menuBtn = document.querySelector('.hero-btn-mob');
     const closeMenuBtn = document.querySelector('.header-close-btn');
     const navMobile = document.querySelector('.mob-nav');
+    const navMenu = document.querySelector('.header-menu-wrap span');
+
 
     menuBtn.addEventListener('click', () => {
         navMobile.classList.add('active');
@@ -13,7 +15,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
     document.querySelectorAll('.header-menu-link').forEach(anchor => {
         anchor.addEventListener('click', function() {
-
             navMobile.classList.remove('active');
 
             const targetId = this.getAttribute('href');
@@ -26,14 +27,10 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
-        console.log(document.querySelector('.header-order-btn'))
-
 
     document.querySelectorAll('.header-order-btn').forEach(anchor => {
-        anchor.addEventListener('click', () => {
+        anchor.addEventListener('click', function() {
             navMobile.classList.remove('active');
-
-            console.log('navMobile')
 
             const targetId = this.getAttribute('href');
             const targetElement = document.querySelector(targetId);
@@ -43,5 +40,13 @@ document.addEventListener('DOMContentLoaded', () => {
                 });
             }
         });
+    });
+
+    navMenu.addEventListener('click', function() {
+        const menu = this.closest('.header-menu-wrap');
+
+        if ( menu ) {
+            menu.classList.toggle('active');
+        }
     });
 });
