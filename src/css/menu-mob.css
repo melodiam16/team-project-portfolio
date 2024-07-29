@@ -9,7 +9,15 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #1c1d20;
+    background: url(../img/images/mob-menu/gradient-bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+@media (min-resolution: 192dpi) {
+    .mob-nav {
+        background-image: url(../img/images/mob-menu/gradient-bg-2x.png);
+    }
 }
 
 .active {
