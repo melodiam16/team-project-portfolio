@@ -9,6 +9,10 @@ p {
 }
 
 @media (min-width: 320px) and (max-width: 767px) {
+  .container {
+    width: 375px;
+  }
+
   .benefits-cards {
     display: flex;
     gap: 16px;
@@ -70,6 +74,11 @@ p {
 
 /* @media (min-width: 768px) and (max-width: 1439px) { */
 @media (min-width: 768px) and (max-width: 1440px) {
+  .container {
+    width: 768px;
+    padding-left: 32px;
+    padding-right: 32px;
+  }
   .section {
     padding-bottom: 96px;
   }
