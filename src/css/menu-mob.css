@@ -1,61 +1,60 @@
 .mob-nav {
-    position: fixed;
-    z-index: 10;
-    top: 0;
-    right: -100%;
-    width: 100%;
-    height: 100%;
-    transition: 700ms;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background: url(../img/images/mob-menu/gradient-bg.png);
-    background-repeat: no-repeat;
-    background-size: cover;
+  position: fixed;
+  z-index: 10;
+  top: 0;
+  right: -100%;
+  width: 100%;
+  height: 100%;
+  transition: 700ms;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: url(../img/images/mob-menu/gradient-bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 @media (min-resolution: 192dpi) {
-    .mob-nav {
-        background-image: url(../img/images/mob-menu/gradient-bg-2x.png);
-    }
+  .mob-nav {
+    background-image: url(../img/images/mob-menu/gradient-bg-2x.png);
+  }
 }
 
 .active {
-    right: 0;
+  right: 0;
 }
 
 .header-close-btn {
-    position: absolute;
-    top: 32px;
-    right: 16px;
+  position: absolute;
+  top: 32px;
+  right: 16px;
 }
 
 .icon-close-btn {
-    cursor: pointer;
+  cursor: pointer;
 }
 
 .mob-nav-btn {
-    position: absolute;
-    left: 18px;
-    right: 18px;
-    bottom: 64px;
-    margin: 0 auto;
-    display: flex;
-    justify-content: center;
+  position: absolute;
+  left: 18px;
+  right: 18px;
+  bottom: 64px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
 }
 
 .mob-nav-btn .header-order-btn {
-    display: inline-block;
+  display: inline-block;
 }
 
 .mob-nav .header-menu-list {
-    display: block;
-    text-align: center;
-    padding-left: 0;
-
+  display: block;
+  text-align: center;
+  padding-left: 0;
 }
 
 .mob-nav .header-menu-item {
-    text-decoration: underline;
-    margin-bottom: 12px;
+  text-decoration: underline;
+  margin-bottom: 12px;
 }
