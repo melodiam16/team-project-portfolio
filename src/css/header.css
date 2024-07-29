@@ -1,0 +1,139 @@
+.header {
+    padding: 0 ;
+    background-color: transparent;
+    position: absolute;
+    z-index: 9;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+.nav-list {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 40px;
+}
+
+.nav-link {
+    font-weight: 500;
+    letter-spacing: 0.02em;
+    line-height: 1.5;
+}
+
+.nav-link:hover,
+.nav-link:focus {
+    color: #747bff;
+}
+
+
+.header-navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding-top: 32px;
+}
+
+.logo {
+    display: flex;
+    gap: 8px;
+    align-items: flex-start;
+}
+
+.header-menu-wrap {
+    display: none;
+
+}
+
+
+.header-menu-wrap.active .header-menu-list {
+    display: block;
+}
+
+
+.header-menu-list {
+    display: none;
+}
+
+
+.header-order-btn {
+    display: none;
+    border-radius: 60px;
+    padding: 18px 24px;
+    background-color: #ed3b44;
+    text-align: center;
+    font-weight: 500;
+    font-size: 16px;
+    letter-spacing: -0.02em;
+    color: #fafafa;
+
+}
+
+.header-menu-item:hover {
+    font-weight: 500;
+    font-size: 16px;
+    letter-spacing: -0.02em;
+    text-decoration: underline;
+    text-decoration-skip-ink: none;
+    color: #ed3b44;
+}
+
+.hero-btn-mob {
+    line-height: 0;
+    padding: 0;
+    border: none;
+    background-color: transparent;
+    width: 28px;
+    height: 28px;
+}
+.icon-open-btn {
+    cursor: pointer;
+}
+
+@media only screen and (min-width: 768px) {
+    /* .header {} */
+
+
+    .header-menu-wrap {
+        display: block;
+        text-align: center;
+        min-width: 67px;
+        padding-top: 10px;
+
+    }
+
+    .header-menu-wrap span {
+        cursor: pointer;
+        font-weight: 500;
+        font-size: 16px;
+        letter-spacing: -0.02em;
+        color: #fafafa;
+        padding-bottom: 2px;
+        border-bottom: 1px solid white;
+
+    }
+
+    .header-menu-text {
+        display: inline-block;
+    }
+
+    .header-menu-list {
+        margin-top: 18px;
+        padding-left: 0;
+    }
+
+    .header-menu-item {
+        margin-bottom: 5px;
+
+    }
+
+    .header-order-btn {
+        display: block;
+
+    }
+
+    .hero-btn-mob {
+        display: none;
+
+    }
+}
