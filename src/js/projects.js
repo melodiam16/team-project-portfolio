@@ -1,18 +1,18 @@
 import Swiper from 'swiper/bundle';
 import 'swiper/css/bundle';
 
-const btnNextEl = document.querySelector('.swiper-button-next ');
-btnNextEl.style.color = '#FAFAFA';
-btnNextEl.style.position = 'static';
-btnNextEl.style.width = '64px';
-btnNextEl.style.height = '64px';
-btnNextEl.style.margin = '0';
-const btnPrevEl = document.querySelector('.swiper-button-prev ');
-btnPrevEl.style.position = 'static';
-btnPrevEl.style.width = '64px';
-btnPrevEl.style.height = '64px';
-btnPrevEl.style.color = '#FAFAFA';
-btnPrevEl.style.margin = '0';
+const btnNextEl = document.querySelector('.right-btn-next ');
+// btnNextEl.style.color = '#FAFAFA';
+// btnNextEl.style.position = 'static';
+// btnNextEl.style.width = '68px';
+// btnNextEl.style.height = '68px';
+// btnNextEl.style.margin = '0';
+const btnPrevEl = document.querySelector('.left-btn-prev ');
+// btnPrevEl.style.position = 'static';
+// btnPrevEl.style.width = '68px';
+// btnPrevEl.style.height = '68px';
+// btnPrevEl.style.color = '#FAFAFA';
+// btnPrevEl.style.margin = '0';
 
 function upSwiperSlideDisplay() {
   const swiperSlides = document.querySelectorAll('.swiper-slide');
@@ -34,8 +34,8 @@ export const mySwiper = new Swiper('.swiper', {
   spaceBetween: 30,
   loop: false,
   navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev',
+    nextEl: '.right-btn-next',
+    prevEl: '.left-btn-prev',
   },
   keyboard: {
     enabled: true,
