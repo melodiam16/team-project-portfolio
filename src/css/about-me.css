@@ -153,6 +153,7 @@
 } */
 .accordion-container-first .ac.is-active > .ac-header .ac-trigger::after {
   content: '⇧';
+  /* content: '✅'; */
 }
 
 .ac.is-active .ac-panel {
