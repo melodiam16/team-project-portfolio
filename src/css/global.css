@@ -1,5 +1,6 @@
 .container {
   width: 100%;
+  min-width: 320px;
   margin: 0 auto;
   padding-left: 16px;
   padding-right: 16px;
@@ -28,7 +29,7 @@ li {
 
 /* Tablet */
 
-@media screen and (min-width: 768px) {
+@media (min-width: 768px) and (max-width: 1439px) {
   .container {
     width: 768px;
     padding-left: 32px;
