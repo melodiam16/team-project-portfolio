@@ -1,6 +1,12 @@
-.swiper {
+/* .swiper {
   border-radius: 24px;
   max-width: 320px;
+} */
+
+
+.swiper-projects {
+    border-radius: 24px;
+    max-width: 320px;
 }
 
 .projects-container {
@@ -16,8 +22,8 @@
   margin-bottom: 32px;
 }
 
-.swiper-slide {
-  min-width: 320px;
+.swiper-slide-projects {
+  min-width: 343px;
   max-height: 812px;
 }
 
@@ -95,7 +101,7 @@
     margin: 96px 32px;
   }
 
-  .swiper {
+  .swiper-projects {
     max-width: 1440px;
   }
 
@@ -105,8 +111,8 @@
     height: 385px;
   }
 
-  .swiper-slide {
-    min-width: 768px;
+  .swiper-slide-projects {
+    min-width: 704px;
     max-height: 1191px;
   }
 
@@ -133,7 +139,7 @@
 }
 
 @media only screen and (min-width: 1440px) {
-  .swiper {
+  .swiper-projects {
     min-width: 1440px;
   }
 
@@ -143,7 +149,7 @@
     gap: 0;
   }
 
-  .swiper-slide {
+  .swiper-slide-projects {
     display: flex;
     min-width: 1376px;
     max-height: 625px;

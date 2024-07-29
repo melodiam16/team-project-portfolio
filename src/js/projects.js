@@ -15,7 +15,7 @@ const btnPrevEl = document.querySelector('.left-btn-prev ');
 // btnPrevEl.style.margin = '0';
 
 function upSwiperSlideDisplay() {
-  const swiperSlides = document.querySelectorAll('.swiper-slide');
+  const swiperSlides = document.querySelectorAll('.swiper-slide-projects');
   if (window.innerWidth > 1440) {
     swiperSlides.forEach(slide => {
       slide.style.display = 'flex';
@@ -29,7 +29,7 @@ function upSwiperSlideDisplay() {
 upSwiperSlideDisplay();
 window.addEventListener('resize', upSwiperSlideDisplay);
 
-export const mySwiper = new Swiper('.swiper', {
+export const projectsSwiper = new Swiper('.swiper', {
   slidesPerView: 3,
   spaceBetween: 30,
   loop: false,
