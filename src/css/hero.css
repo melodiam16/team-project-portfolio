@@ -99,8 +99,7 @@
   .hero-list {
     gap: 8px;
     justify-content: flex-end;
-    padding-bottom: 32px;
-    padding-right: 32px;
+    margin-right: 32px;
   }
   .hero-item {
     font-weight: 500;
