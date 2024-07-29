@@ -1,21 +1,10 @@
-/* .about-boxes {
-  display: flex;
-  gap: 0;
-}
-
-.item-about-boxes {
-  flex-direction: row;
-} */
-
-/* новий 1 вар */
 .container.about-me-container {
   display: flex;
   flex-direction: column;
   align-items: center;
   margin-bottom: 32px;
-}
-
-.about-intro-text {
+  }
+  .about-intro-text {
   margin-bottom: 20px;
   text-align: center;
   width: 100%;
@@ -23,59 +12,87 @@
   background-color: #242527;
   border-radius: 24px;
   padding: 32px;
-}
-
-.intro-text {
+  }
+  .intro-text {
   text-transform: uppercase;
   color: #fafafa;
   height: 196px;
   text-align: left;
   padding: 0px 0px;
-}
-
-.highlight-red {
+  }
+  .highlight-red {
   color: #ed3b44;
-}
-.highlight-grey {
+  }
+  .highlight-grey {
   color: rgba(250, 250, 250, 0.4);
-}
-
-.section.about-me-section {
+  }
+  .section.about-me-section {
   padding-top: 0;
   padding-bottom: 0;
-}
-
-.about-intro-img {
+  }
+  .about-intro-img {
   width: 100%;
   border-radius: 24px;
-}
-
-.about-me-img {
+  }
+  .about-me-img {
   width: 100%;
   height: auto;
   border-radius: 24px;
-}
-
-@media screen and (min-width: 320px) {
-  .about-lines {
-    border-radius: 24px;
-    width: 343px;
-    height: 500px;
+  }
+  .visually-hidden {
+    .visually-hidden {
+      position: absolute;
+      width: 1px;
+      height: 1px;
+      margin: -1px;
+      border: 0;
+      padding: 0;
+      white-space: nowrap;
+      clip-path: inset(100%);
+      clip: rect(0 0 0 0);
+      overflow: hidden;
+    }
+  }
+  @media screen and (min-width: 768px) {
+  .about-intro-text {
+  margin-bottom: 16px;
+  width: 100%;
+  height: 700px;
+  padding: 64px;
+  }
+  .intro-text {
+  font-size: 38px;
+  width: 576px;
+  line-height: 0.95;
+  letter-spacing: -0.03em;
+  }
+  @media screen and (min-width: 1440px) {
+    .container {
+      width: 100%;
+    }
+  .about-me-container {
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 16px;
+  align-items: center;
+  justify-content: center;
+  /* align-items: start; */
+  margin-bottom: 96px;
+  }
+  .about-intro-img {
+  height: 700px;
+  }
+  .about-me-img {
+  width: 680px;
+  height: 100%;
   }
   .about-intro-text {
-    border-radius: 24px;
-    width: 343px;
-    height: 500px;
+  width: 680px;
+  height: 700px;
   }
-
-  .about-boxes {
-    display: flex;
-    gap: 16px;
-    flex-direction: column;
-    align-items: center;
-  }
-}
-
+}}
+  
+  
 /* далі акардіон */
 
 .container-accordion-swiper {
