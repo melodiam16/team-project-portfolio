@@ -29,12 +29,19 @@ document.addEventListener('DOMContentLoaded', function () {
 
         modalOverlay.classList.add('is-open');
 
-        closeModalBtn.addEventListener('click', function () {
+        const closeHandler = () => {
           modalOverlay.classList.remove('is-open');
-        });
+          closeModalBtn.removeEventListener('click', closeHandler);
+        };
+
+        closeModalBtn.addEventListener('click', closeHandler);
       })
       .catch(error => {
         window.alert(error.message);
       });
+  });
+
+  closeModalBtn.addEventListener('click', function () {
+    modalOverlay.classList.remove('is-open');
   });
 });
