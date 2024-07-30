@@ -13,32 +13,9 @@ document.addEventListener('DOMContentLoaded', () => {
         navMobile.classList.remove('active');
     });
 
-    document.querySelectorAll('.header-menu-link').forEach(anchor => {
+    document.querySelectorAll('.header-menu-link, .header-order-btn').forEach(anchor => {
         anchor.addEventListener('click', function() {
             navMobile.classList.remove('active');
-
-            const targetId = this.getAttribute('href');
-            const targetElement = document.querySelector(targetId);
-            if (targetElement) {
-                targetElement.scrollIntoView({
-                    behavior: 'smooth'
-                });
-            }
-        });
-    });
-
-
-    document.querySelectorAll('.header-order-btn').forEach(anchor => {
-        anchor.addEventListener('click', function() {
-            navMobile.classList.remove('active');
-
-            const targetId = this.getAttribute('href');
-            const targetElement = document.querySelector(targetId);
-            if (targetElement) {
-                targetElement.scrollIntoView({
-                    behavior: 'smooth'
-                });
-            }
         });
     });
 

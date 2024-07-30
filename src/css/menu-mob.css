@@ -14,6 +14,8 @@
   background-size: cover;
 }
 
+
+
 @media (min-resolution: 192dpi) {
   .mob-nav {
     background-image: url(../img/images/mob-menu/gradient-bg-2x.png);
@@ -28,10 +30,17 @@
   position: absolute;
   top: 32px;
   right: 16px;
+  width: 28px;
+  height: 28px;
 }
 
-.icon-close-btn {
+
+
+.icon-close-menu {
   cursor: pointer;
+  width: 28px;
+  height: 28px;
+  fill: #fafafa;
 }
 
 .mob-nav-btn {
