@@ -96,7 +96,6 @@
 }
 
 @media screen and (min-width: 768px) {
-
   .hero {
     background-image: url(../img/img-hero-n/glass-effect-tab-1x-min.png);
     background-size: 76% 100%;
@@ -150,7 +149,6 @@
 }
 
 @media screen and (min-width: 1440px) {
-
   .hero {
     background-image: url(../img/img-hero-n/glass-effect-full-desk-1x-min.jpg);
     background-size: cover;
@@ -163,7 +161,7 @@
     (min-resolution: 2dppx),
     (min-resolution: 192dpi) {
     .hero {
-      background-image: url(../img/img-hero-n/glass-effect-desk-2x-min.png);
+      background-image: url(../img/img-hero-n/glass-effect-full-desk-2x-min.jpg);
     }
   }
 
