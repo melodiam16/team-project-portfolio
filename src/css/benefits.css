@@ -71,7 +71,7 @@ p {
     flex-direction: row;
     gap: 16px;
     max-width: 704px;
-    height: 556px;
+
     margin-bottom: 64px;
   }
 
@@ -94,6 +94,5 @@ p {
   .benefits-cards {
     margin-left: auto;
     max-width: 680px;
-    height: 556px;
   }
 }
