@@ -21,10 +21,10 @@ h2 {
 .footer-container {
   display: flex;
   flex-direction: column;
-  padding-top: 32px;
-  padding-bottom: 32px;
 }
 .footer {
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
 
 .footer-img-span {
@@ -165,8 +165,9 @@ textarea:focus::placeholder {
 /* Tablet */
 
 @media (min-width: 768px) {
-  .footer-container {
-    padding: 80px 32px 169px;
+  .footer {
+    padding-top: 80px;
+    padding-bottom: 169px;
   }
 
   .footer-img-span {
@@ -235,8 +236,15 @@ textarea:focus::placeholder {
   .footer-container {
     display: flex;
     flex-direction: column;
-    padding: 80px 196px 169px;
+    padding-left: 196px;
+    padding-right: 196px;
   }
+
+  .footer {
+    padding-top: 80px;
+    padding-bottom: 169px;
+  }
+
   .heading-style {
     width: 542px;
     height: 146px;
