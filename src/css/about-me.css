@@ -1,11 +1,48 @@
-.container.about-me-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-bottom: 32px;
+
+
+.container {
+  max-width: 320px;
+  padding-left: 16px;
+  padding-right: 16px;
+  margin: 0 auto;
+}
+
+
+@media screen and (min-width: 768px) {
+  .container {
+     max-width: 768px;
   }
-  .about-intro-text {
-  margin-bottom: 20px;
+  
+}
+
+@media screen and (min-width: 1158px) {
+  .container {
+     max-width: 1158px;
+     padding: 0 15px;
+  }
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+
+.about-intro-text {
   text-align: center;
   width: 100%;
   height: 500px;
@@ -33,68 +70,188 @@
   .about-intro-img {
   width: 100%;
   border-radius: 24px;
+  height: 500px;
   }
   .about-me-img {
   width: 100%;
   height: auto;
   border-radius: 24px;
   }
-  .visually-hidden {
-    .visually-hidden {
-      position: absolute;
-      width: 1px;
-      height: 1px;
-      margin: -1px;
-      border: 0;
-      padding: 0;
-      white-space: nowrap;
-      clip-path: inset(100%);
-      clip: rect(0 0 0 0);
-      overflow: hidden;
-    }
+
+.about-section-container {
+  margin-bottom: 20px;
+}
+
+@media screen and (min-width: 1158px) {
+  .container {
+     width: 1158px;
   }
-  @media screen and (min-width: 768px) {
-  .about-intro-text {
-  margin-bottom: 16px;
-  width: 100%;
-  height: 700px;
-  padding: 64px;
-  }
-  .intro-text {
-  font-size: 38px;
-  width: 576px;
-  line-height: 0.95;
-  letter-spacing: -0.03em;
-  }
-  @media screen and (min-width: 1440px) {
-    .container {
-      width: 100%;
-    }
-  .about-me-container {
-  flex-direction: row;
+}
+
+/*--Portfolio--*/
+.about-section-img {
+  padding-top: 64px; 
+}
+
+.portfolio-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px 0px;
+  flex-direction: column;
+  align-items: center;
+}
+
+.portfolio-item {
+  width: 343px;
+  height: 500px;
+  text-align: center;
+  /* transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1); */
+}
+
+.portfol-list-img-wrapper {
+  display: flex;
   flex-wrap: wrap;
   gap: 16px;
-  align-items: center;
-  justify-content: center;
-  /* align-items: start; */
-  margin-bottom: 96px;
-  }
-  .about-intro-img {
-  height: 700px;
-  }
-  .about-me-img {
-  width: 680px;
-  height: 100%;
-  }
-  .about-intro-text {
-  width: 680px;
-  height: 700px;
-  }
-}}
-  
-  
-/* далі акардіон */
+}
 
+
+.about-intro-text-card {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.portfol-list-img-wrapper picture {
+    flex-shrink: 0;
+}
+
+.overlay {
+  opacity: 0;
+  pointer-events: none;
+  visibility: hidden;
+ }
+ .about-intro-img {
+       display: block;
+       max-width: 100%;
+       height: auto;
+    }
+
+.portfolio-imeges {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+.about-me-img {
+  height: 500px;
+}
+@media screen and (min-width: 768px) {
+  .container {
+     width: 768px;
+  }
+  .about-section-img {
+    padding-top: 64px; 
+    padding-bottom: 16px; 
+    width: 704px;
+  }
+  .portfolio-container {  
+  display:flex;
+  text-align: center;
+  border: 1px solid #ffff;
+  
+  }
+  .portfolio-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px 0px;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+.about-intro-text {
+  text-align: center;
+  width: 100%;
+  height: 570px;
+  background-color: #242527;
+  border-radius: 24px;
+  padding: 64px;
+  }
+
+  .portfolio-item {
+     width: calc((100% - 16px) /2);
+     padding: 0px;
+     width: 700px;
+     height: 700px;
+  }
+  
+  .about-intro-img {
+        display: block;
+        max-width: 100%;
+        height: auto;
+     }
+     .about-me-img {
+      height: 570px;
+    }
+  }
+
+  @media screen and (min-width: 1158px) {
+  .container {
+    width: 1440px;
+     
+  } 
+  .about-section-img {
+    padding-top: 115px; 
+    padding-bottom: 16px;
+    height: 700px;
+    width: 1350;
+  }
+  
+  .portfolio-container {
+  background-color: #ffff;
+  display: block;
+  text-align: center;
+  border: 1px solid #ffff;
+  width: 1440px;
+  
+}
+.portfolio-list {
+  flex-direction:row;
+  gap: 16px;
+}
+.portfolio-list {
+  padding: 0px;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  
+}
+
+.portfolio-item {
+  width: calc((100% - 16px) /2);
+  margin-left: 0px;
+  transform: translateY(0%);
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  
+}
+
+.portfol-list-img-wrapper picture {
+  width: unset;
+}
+
+.portfol-list-img-wrapper {
+  position: relative;
+  overflow: hidden;
+}
+
+}
+
+/* далі акардіон та гортання скилів */
+.section-bibliotec {
+  margin-top: 20px;
+}
+/* 
+.about-me-container {
+  margin-top: 20px;
+} */
 .container-accordion-swiper {
   min-width: 320px;
   margin-left: 16px;
