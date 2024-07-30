@@ -79,9 +79,9 @@
   display: block;
 }
 
-.container.accordion-container {
+/* .container.accordion-container {
   margin-bottom: 32px;
-}
+} */
 
 .icon-arrow {
   width: 18px;
@@ -111,15 +111,15 @@
     width: 20px;
     height: 20px;
   }
-  .container.accordion-container {
+  /* .container.accordion-container {
     margin-bottom: 64px;
-  }
+  } */
 }
 
 @media screen and (min-width: 1440px) {
-  .container.accordion-container {
+  /* .container.accordion-container {
     margin-bottom: 96px;
-  }
+  } */
   .faq-accordion {
     display: grid;
     grid-template-columns: 1fr 1fr;
