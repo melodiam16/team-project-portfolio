@@ -1,5 +1,9 @@
+html {
+    scroll-behavior: smooth;
+}
+
 .header {
-    padding: 0 ;
+    padding-top: 32px;
     background-color: transparent;
     position: absolute;
     z-index: 9;
@@ -31,7 +35,6 @@
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
-    padding-top: 32px;
 }
 
 .logo {
@@ -78,6 +81,7 @@
     color: #ed3b44;
 }
 
+
 .hero-btn-mob {
     line-height: 0;
     padding: 0;
@@ -88,6 +92,12 @@
 }
 .icon-open-btn {
     cursor: pointer;
+}
+
+.icon-open-menu {
+    width: 28px;
+    height: 28px;
+    fill: #fafafa;
 }
 
 @media only screen and (min-width: 768px) {
