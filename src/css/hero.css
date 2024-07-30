@@ -15,7 +15,7 @@
   background-repeat: no-repeat;
 }
 
-.hero-container{
+.hero-container {
   /* width: 375px; */
   padding-top: 281px;
   padding-bottom: 32px;
@@ -63,7 +63,6 @@
   cursor: pointer;
   margin-right: 4px;
 }
-
 
 .hero-link-mail {
   border: 1px solid rgba(250, 250, 250, 0.2);
@@ -128,8 +127,6 @@
     /* width: 223px;
     height: 55px; */
   }
-
-
 }
 
 @media screen and (min-width: 1440px) {
