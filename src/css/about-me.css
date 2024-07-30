@@ -134,9 +134,9 @@ ul.list-ed li:not(:last-child) {
     border: 1px solid rgba(250, 250, 250, 0.4);
   }
 }
-.container.accordion-container {
+/* .container.accordion-container {
   margin-bottom: 32px;
-}
+} */
 
 .about-wrapper {
   display: flex;
@@ -237,9 +237,9 @@ ul.list-ed li:not(:last-child) {
     height: 200px;
     padding: 0;
   }
-  .container.accordion-container {
+  /* .container.accordion-container {
     margin-bottom: 64px;
-  }
+  } */
   .about-swiper-wrapper {
     .about-swiper-slide {
       height: 200px;
