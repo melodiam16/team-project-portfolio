@@ -15,8 +15,8 @@
   background-repeat: no-repeat;
 }
 
-.mini-container {
-  width: 375px;
+.hero-container{
+  /* width: 375px; */
   padding-top: 281px;
   padding-bottom: 32px;
   /* padding-left: 16px;
@@ -30,7 +30,8 @@
   font-size: 50px;
   line-height: 100%;
   color: #fafafa;
-  max-width: 343px;
+
+  /* max-width: 343px; */
   letter-spacing: -0.03em;
   text-transform: uppercase;
   /* text-align: center; */
@@ -42,12 +43,11 @@
   display: flex;
   flex-direction: row;
   /* flex-wrap: wrap; */
-  gap: 4px;
   align-items: center;
   justify-content: center;
   /* min-width: 342px;
     min-height: 37px; */
-  padding: 0, 17px, 0, 16px;
+  /* padding: 0, 17px, 0, 16px; */
 }
 
 .hero-item {
@@ -61,18 +61,22 @@
   width: 37px;
   height: 37px;
   cursor: pointer;
+  margin-right: 4px;
 }
+
 
 .hero-link-mail {
   border: 1px solid rgba(250, 250, 250, 0.2);
+  font-weight: 500;
+  font-size: 14px;
+  letter-spacing: -0.02em;
   border-radius: 60px;
   padding: 10px 12px;
-  width: 178px;
-  height: 37px;
+  /* width: 178px;
+  height: 37px; */
 }
 
 .hero-link {
-  font-family: 'Inter Tight', sans-serif;
   font-weight: 500;
   font-size: 14px;
   letter-spacing: -0.02em;
@@ -85,50 +89,47 @@
 }
 
 @media screen and (min-width: 768px) {
-  .mini-container {
-    width: 768px;
+  .hero-container {
     padding-top: 300px;
+    display: flex;
+    flex-direction: column;
   }
 
   .hero-title {
-    max-width: 632px;
+    /* max-width: 632px; */
     margin-bottom: 187px;
     box-shadow: none;
     font-size: 90px;
   }
   .hero-list {
-    gap: 8px;
+    /* margin-right: 8px; */
     justify-content: flex-end;
-    margin-right: 32px;
+    /* margin-right: 32px; */
   }
   .hero-item {
-    font-weight: 500;
-    font-size: 16px;
-    font-family: Inter Tight, sans-serif;
-    letter-spacing: -0.02em;
-    border: 1px solid rgba(250, 250, 250, 0.2);
     border-radius: 60px;
     padding: 18px 20px;
     width: 55px;
     height: 55px;
+    margin-right: 8px;
   }
   .hero-link {
-    display: flex;
-    padding: 18px 20px;
     font-weight: 500;
-    font-size: 14px;
-    font-family: Inter Tight, sans-serif;
+    font-size: 16px;
     letter-spacing: -0.02em;
     color: #fafafa;
   }
 
   .hero-link-mail {
-    border: 1px solid rgba(250, 250, 250, 0.2);
+    /* border: 1px solid rgba(250, 250, 250, 0.2); */
     border-radius: 60px;
     padding: 18px 24px;
-    width: 223px;
-    height: 55px;
+    font-size: 16px;
+    /* width: 223px;
+    height: 55px; */
   }
+
+
 }
 
 @media screen and (min-width: 1440px) {
