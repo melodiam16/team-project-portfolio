@@ -21,10 +21,10 @@ h2 {
 .footer-container {
   display: flex;
   flex-direction: column;
-  padding-top: 32px;
-  padding-bottom: 32px;
 }
 .footer {
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
 
 .footer-img-span {
@@ -145,19 +145,31 @@ textarea:focus::placeholder {
   color: #fafafa;
 }
 
-.footer-address-email {
+.address-list {
+  display: flex;
+  flex-direction: row;
+  gap: 4px;
+  /* justify-content: start; */
+  align-items: flex-start;
+}
+
+.address-list-element {
   border: 1px solid rgba(250, 250, 250, 0.2);
-  margin-right: 4px;
   border-radius: 60px;
-  padding: 10px 12px;
+}
+
+.footer-address-email {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 178px;
   height: 37px;
 }
 
 .footer-address-tel {
-  border: 1px solid rgba(250, 250, 250, 0.2);
-  border-radius: 60px;
-  padding: 10px 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 118px;
   height: 37px;
 }
@@ -165,8 +177,9 @@ textarea:focus::placeholder {
 /* Tablet */
 
 @media (min-width: 768px) {
-  .footer-container {
-    padding: 80px 32px 169px;
+  .footer {
+    padding-top: 80px;
+    padding-bottom: 169px;
   }
 
   .footer-img-span {
@@ -220,12 +233,18 @@ textarea:focus::placeholder {
     font-size: 16px;
   }
 
+  .address-list {
+    gap: 8px;
+  }
+
   .footer-address-email {
-    padding: 18px 32px;
+    width: 239px;
+    height: 55px;
   }
 
   .footer-address-tel {
-    padding: 18px 32px;
+    width: 171px;
+    height: 55px;
   }
 }
 
@@ -235,8 +254,15 @@ textarea:focus::placeholder {
   .footer-container {
     display: flex;
     flex-direction: column;
-    padding: 80px 196px 169px;
+    padding-left: 196px;
+    padding-right: 196px;
   }
+
+  .footer {
+    padding-top: 80px;
+    padding-bottom: 169px;
+  }
+
   .heading-style {
     width: 542px;
     height: 146px;
