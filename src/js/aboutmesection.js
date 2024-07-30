@@ -4,7 +4,7 @@ import 'swiper/css';
 import Accordion from 'accordion-js';
 import 'accordion-js/dist/accordion.min.css';
 
-new Accordion('.accordion', {
+new Accordion('.about-accordion', {
 duration: 600,
 showMultiple: true,
 openOnInit: [0],
