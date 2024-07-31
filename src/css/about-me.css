@@ -1,6 +1,6 @@
 
  
-.portfolio-list {
+.about-portfolio-list {
   display: flex;
   flex-wrap: wrap;
   gap: 16px 0px;
@@ -8,7 +8,7 @@
   align-items: center;
 }
 
-.portfolio-item {
+.about-portfolio-item {
   width: 343px;
   height: 500px;
   text-align: center;
@@ -25,6 +25,7 @@
 .about-intro-text {
   margin-bottom: 20px;
   text-align: center;
+  align-items: center;
   width: 100%;
   height: 500px;
   background-color: #242527;
@@ -35,7 +36,8 @@
   text-transform: uppercase;
   color: #fafafa;
   text-align: center;
-  padding: 10px;
+  align-items: center;
+  padding: 0px;
   
 }
 .highlight-red {
@@ -153,11 +155,6 @@ ul.list-ed li:not(:last-child) {
   }
 }
 
-
-/* .container.accordion-container {
-  margin-bottom: 32px;
-} */
-
 .about-wrapper {
   display: flex;
   align-items: center;
@@ -215,14 +212,14 @@ ul.list-ed li:not(:last-child) {
 }
 @media screen and (min-width: 768px) {
 
-  .portfolio-list {
+  .about-portfolio-list {
     display: flex;
     flex-wrap: wrap;
     gap: 16px 0px;
     flex-direction: column;
     align-items: center;
   }
-  .portfolio-item {
+  .about-portfolio-item {
     width: calc((100% - 16px) /2);
     padding: 0px;
     width: 700px;
@@ -254,16 +251,15 @@ ul.list-ed li:not(:last-child) {
     margin-bottom: 16px;
     width: 100%;
     height: 700px;
-    /* padding: 64px; */
+    padding: 64px;
   } 
 
   .intro-text {
     font-size: 38px;
     width: 570px;
-    height: 200px;
+    height: 210px;
     line-height: 0.95;
     letter-spacing: -0.03em;
-
   }
   .about-panel-summary {
     gap: 16px;
@@ -288,10 +284,6 @@ ul.list-ed li:not(:last-child) {
     padding: 0;
   }
 
-  /* .container.accordion-container {
-
-    margin-bottom: 64px;
-  } */
   .about-swiper-wrapper {
     .about-swiper-slide {
       height: 200px;
@@ -322,7 +314,7 @@ ul.list-ed li:not(:last-child) {
 
 @media screen and (min-width: 1440px) {
 
-  .portfolio-list {
+  .about-portfolio-list {
     padding: 0px;
     margin: 0;
     display: flex;
@@ -331,7 +323,7 @@ ul.list-ed li:not(:last-child) {
     gap: 16px;
   }
   
-  .portfolio-item {
+  .about-portfolio-item {
     width: calc((100% - 16px) /2);
     margin-left: 0px;
     transform: translateY(0%);
@@ -340,7 +332,6 @@ ul.list-ed li:not(:last-child) {
   }
 
   .intro-text {
-    width: 520px;
     padding: 10px;
     align-items: center;
     text-align: center;
