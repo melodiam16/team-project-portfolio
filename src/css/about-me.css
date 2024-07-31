@@ -162,6 +162,7 @@ ul.list-ed li:not(:last-child) {
 }
 .about-swiper {
   display: flex;
+  padding-top: 32px;
   align-items: center;
   justify-content: space-between;
   overflow: hidden;
@@ -400,4 +401,5 @@ ul.list-ed li:not(:last-child) {
       display: inline-flex;
     }
   }
+  
 }
