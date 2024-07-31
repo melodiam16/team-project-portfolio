@@ -7,7 +7,6 @@ import './js/mob-menu';
 import './js/reviews';
 
 // footer
-import './js/modal-close-button';
 import './js/footer-fetch-api';
 
 import { projectsSwiper } from './js/projects';
