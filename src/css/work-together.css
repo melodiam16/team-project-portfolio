@@ -29,8 +29,6 @@ h2 {
 
 .footer-img-span {
   border-radius: 12px;
-  width: 44px;
-  height: 44px;
 }
 
 .heading-style {
@@ -67,6 +65,10 @@ h2 {
   letter-spacing: -0.02em;
   color: rgba(250, 250, 250, 0.6);
 }
+input:focus {
+  outline: none;
+}
+
 .footer-form-comments {
   border: none;
   border-bottom: 1px solid rgba(250, 250, 250, 0.2);
@@ -180,6 +182,31 @@ textarea:focus::placeholder {
   .footer {
     padding-top: 80px;
     padding-bottom: 169px;
+    position: relative;
+    /* background-color: #fff; */
+  }
+
+  .footer::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 25%;
+    height: 100%;
+    background-image: url(../img/img-footer/footer-glass-effect-tab\ 1x.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  @media (min-resolution: 192dpi) {
+    .footer::before {
+      background-image: url(../img/img-footer/footer-glass-effect-tab\ 2x.png);
+    }
+  }
+
+  .footer-container {
+    position: relative;
+    z-index: 1;
   }
 
   .footer-img-span {
@@ -263,6 +290,17 @@ textarea:focus::placeholder {
     padding-bottom: 169px;
   }
 
+  .footer::before {
+    width: 27%;
+    background-image: url(../img/img-footer/footer-glass-effect-desk\ 1x.png);
+  }
+
+  @media (min-resolution: 192dpi) {
+    .footer::before {
+      background-image: url(../img/img-footer/footer-glass-effect-desk\ 2x.png);
+    }
+  }
+
   .heading-style {
     width: 542px;
     height: 146px;
@@ -271,7 +309,6 @@ textarea:focus::placeholder {
   }
 
   .footer-img-span {
-    border-radius: 24px;
     width: 70px;
     height: 70px;
   }
