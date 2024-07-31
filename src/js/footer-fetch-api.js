@@ -2,6 +2,30 @@ document.addEventListener('DOMContentLoaded', function () {
   const form = document.querySelector('.footer-form');
   const modalOverlay = document.querySelector('.modal-overlay');
   const closeModalBtn = document.querySelector('[data-menu-close]');
+  const backdrop = document.querySelector('.backdrop');
+
+  function closeModal() {
+    modalOverlay.classList.remove('is-open');
+    closeModalBtn.removeEventListener('click', closeHandler);
+    document.removeEventListener('keydown', keyHandler);
+    modalOverlay.removeEventListener('click', overlayClickHandler);
+  }
+
+  function closeHandler(event) {
+    closeModal();
+  }
+
+  function keyHandler(event) {
+    if (event.key === 'Escape') {
+      closeModal();
+    }
+  }
+
+  function overlayClickHandler(event) {
+    if (event.target === modalOverlay || event.target === backdrop) {
+      closeModal();
+    }
+  }
 
   form.addEventListener('submit', function (event) {
     event.preventDefault();
@@ -28,20 +52,14 @@ document.addEventListener('DOMContentLoaded', function () {
         form.reset();
 
         modalOverlay.classList.add('is-open');
-
-        const closeHandler = () => {
-          modalOverlay.classList.remove('is-open');
-          closeModalBtn.removeEventListener('click', closeHandler);
-        };
-
         closeModalBtn.addEventListener('click', closeHandler);
+        document.addEventListener('keydown', keyHandler);
+        modalOverlay.addEventListener('click', overlayClickHandler);
       })
       .catch(error => {
         window.alert(error.message);
       });
   });
 
-  closeModalBtn.addEventListener('click', function () {
-    modalOverlay.classList.remove('is-open');
-  });
+  closeModalBtn.addEventListener('click', closeHandler);
 });

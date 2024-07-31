@@ -10,7 +10,6 @@
 @import url('./global.css');
 @import url('./header.css');
 @import url('./hero.css');
-@import url('./above-aboutme.css');
 @import url('./about-me.css');
 @import url('./benefits.css');
 @import url('./projects.css');
@@ -37,4 +36,3 @@
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
 }
-
