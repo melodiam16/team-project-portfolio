@@ -25,6 +25,9 @@ h2 {
 .footer {
   padding-top: 32px;
   padding-bottom: 32px;
+  background-image: url(../img/img-footer/footer-glass-effect-tab-2x.png);
+  background-position: 100% 30%;
+  background-repeat: no-repeat;
 }
 
 .footer-img-span {
@@ -196,7 +199,7 @@ textarea:focus::placeholder {
     position: absolute;
     top: 0;
     right: 0;
-    width: 25%;
+    width: 29%;
     height: 100%;
     background-image: url(../img/img-footer/footer-glass-effect-tab-1x.png);
     background-size: cover;
