@@ -296,7 +296,7 @@ textarea:focus::placeholder {
   }
 
   .footer::before {
-    width: 27%;
+    width: 29%;
     background-image: url(../img/img-footer/footer-glass-effect-desk\ 1x.png);
   }
 
