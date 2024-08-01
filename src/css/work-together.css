@@ -159,7 +159,6 @@ textarea:focus::placeholder {
   display: flex;
   flex-direction: row;
   gap: 4px;
-  /* justify-content: start; */
   align-items: flex-start;
 }
 
@@ -191,7 +190,6 @@ textarea:focus::placeholder {
     padding-top: 80px;
     padding-bottom: 169px;
     position: relative;
-    /* background-color: #fff; */
   }
 
   .footer::before {
@@ -230,8 +228,6 @@ textarea:focus::placeholder {
   }
 
   .footer-form {
-    /* margin-top: 64px; */
-    /* margin-bottom: 78px; */
     margin-top: 0;
     margin-bottom: 0;
     display: flex;

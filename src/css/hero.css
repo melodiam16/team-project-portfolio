@@ -5,21 +5,6 @@
   background-size: 80% 100%;
 }
 
-/* @media screen and (min-width: 768px) and (max-width: 1157) {
-  .hero-container {
-    min-width: 1158px;
-  }
-}
-
-@media screen and (min-width: 1158px) and (max-width: 1439) {
-  .container {
-    min-width: 1440px;
-  }
-  .hero-container {
-    padding: 0 16px;
-  }
-} */
-
 @media screen and (min-device-pixel-ratio: 2),
   (min-resolution: 2dppx),
   (min-resolution: 192dpi) {
@@ -125,10 +110,8 @@
     padding-right: 32px;
   }
   .hero-list {
-    /* margin-right: 8px; */
     display: flex;
     justify-content: flex-end;
-    /* width: 700px; */
     width: 100%;
     padding-right: 0px;
   }
