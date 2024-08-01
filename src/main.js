@@ -5,6 +5,7 @@ import './js/mob-menu';
 
 // Реалізація гортання карток за допомогою Swiper
 import './js/reviews';
+import './js/text-cut';
 
 // footer
 import './js/footer-fetch-api';
