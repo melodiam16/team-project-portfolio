@@ -56,7 +56,7 @@
   align-items: center;
   /* justify-content: center; */
   width: 170px;
-    min-height: 37px; 
+  min-height: 37px;
   /* padding: 0, 17px, 0, 16px; */
 }
 
@@ -94,7 +94,7 @@
 
 @media screen and (min-width: 365px) {
   .hero {
-width: 100%;
+    width: 100%;
   }
 }
 
@@ -118,7 +118,6 @@ width: 100%;
   }
 
   .hero-title {
-  
     margin-bottom: 187px;
     box-shadow: none;
     font-size: 90px;
