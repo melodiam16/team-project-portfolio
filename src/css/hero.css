@@ -5,7 +5,7 @@
   background-size: 80% 100%;
 }
 
-@media screen and (min-width: 768px) and (max-width: 1157) {
+/* @media screen and (min-width: 768px) and (max-width: 1157) {
   .hero-container {
     min-width: 1158px;
   }
@@ -18,7 +18,7 @@
   .hero-container {
     padding: 0 16px;
   }
-}
+} */
 
 @media screen and (min-device-pixel-ratio: 2),
   (min-resolution: 2dppx),
@@ -33,6 +33,10 @@
   padding-top: 281px;
   padding-bottom: 32px;
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+  margin: 0 auto;
+  padding-left: 16px;
+  padding-right: 16px;
+  width: 375px;
 }
 
 .container {
@@ -117,8 +121,8 @@
     margin-bottom: 187px;
     box-shadow: none;
     font-size: 90px;
-    padding-left: 30px;
-    padding-right: 30px;
+    padding-left: 32px;
+    padding-right: 32px;
   }
   .hero-list {
     /* margin-right: 8px; */
@@ -153,11 +157,11 @@
   .hero {
     background-image: url(../img/img-hero-n/glass-effect-full-desk-1x-min.jpg);
     background-size: cover;
-    padding-top: 300px;
   }
 
   .hero-container {
-    width: 100%;
+    padding-left: 178px;
+    padding-right: 178px;
   }
 
   @media screen and (min-device-pixel-ratio: 2),
