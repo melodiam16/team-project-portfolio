@@ -163,10 +163,12 @@ ul.list-ed li:not(:last-child) {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
+
 .about-swiper {
   display: flex;
-  padding-top: 32px;
   align-items: center;
   justify-content: space-between;
   overflow: hidden;
@@ -181,6 +183,14 @@ ul.list-ed li:not(:last-child) {
     border: none;
   }
 }
+
+.about-swiper-wrapper {
+  .accent-colorise {
+    border: none;
+    /* border-color: #242527; */
+  }
+}
+
 .swiper-slide-title {
   display: flex;
   justify-content: center;
@@ -216,12 +226,19 @@ ul.list-ed li:not(:last-child) {
   height: 18px;
 }
 @media screen and (min-width: 768px) {
+
+  
+.about-wrapper{
+  padding-top: 64px;
+}
+
   .about-portfolio-list {
     display: flex;
     flex-wrap: wrap;
     gap: 16px 0px;
     flex-direction: column;
     align-items: center;
+    margin-bottom: 64px;
   }
   .about-portfolio-item {
     width: calc((100% - 16px) / 2);
@@ -292,10 +309,12 @@ ul.list-ed li:not(:last-child) {
       height: 200px;
     }
   }
+
   .about-wrapper {
     display: flex;
     align-items: center;
     gap: 24px;
+    padding-top: 100px;
   }
   .about-swiper {
     display: flex;
@@ -318,7 +337,7 @@ ul.list-ed li:not(:last-child) {
 @media screen and (min-width: 1440px) {
   .about-portfolio-list {
     padding: 0px;
-    margin: 0;
+    margin-bottom: 96px;
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;

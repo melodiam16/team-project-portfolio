@@ -102,7 +102,9 @@ html {
 
 @media only screen and (min-width: 768px) {
     /* .header {} */
-
+    .header-container {
+        width: 100%;
+    }
 
     .header-menu-wrap {
         display: block;
@@ -145,5 +147,10 @@ html {
     .hero-btn-mob {
         display: none;
 
+    }
+}
+@media screen and (min-width: 1440px) {
+    .header-container {
+        width: 100%;
     }
 }
