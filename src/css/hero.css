@@ -5,6 +5,29 @@
   background-size: 80% 100%;
 }
 
+
+
+@media screen and (min-width: 768px) and (max-width: 1157) {
+  .hero-container {
+  /* max-width: 1157px; */
+  min-width: 1158px;
+ }
+  }
+  
+  @media screen and (min-width: 1158px) and (max-width: 1439){
+    .container {
+      /* min-width: 1158px; */
+      min-width: 1440px;
+    }
+    .hero-container {
+   /* max-width: 1439px; */
+   /* min-width: 1158px; */
+   min-width: 1440px;
+   padding: 0 16px;
+ }
+  }
+  
+
 /* @media screen and (min-width: 375px) { */
 
 /* .hero {
@@ -103,8 +126,10 @@
     background-image: url(../img/img-hero-n/glass-effect-tab-1x-min.png);
     background-size: 76% 100%;
   }
+
   .hero-container {
-    width: 768px;
+    /* width: 768px; */
+    width: 100%;
     padding-top: 300px;
     display: flex;
     flex-direction: column;
@@ -128,7 +153,9 @@
     /* margin-right: 8px; */
     display: flex;
     justify-content: flex-end;
-    width: 700px;
+    /* width: 700px; */
+    width: 100%;
+    padding-right: 0px;
   }
   .hero-item {
     border-radius: 60px;
@@ -154,13 +181,16 @@
   }
 }
 
+
 @media screen and (min-width: 1440px) {
   .hero {
     background-image: url(../img/img-hero-n/glass-effect-full-desk-1x-min.jpg);
     background-size: cover;
+    padding-top: 300px;
   }
+  
   .hero-container {
-    width: 1440px;
+     width: 100%;
   }
 
   @media screen and (min-device-pixel-ratio: 2),
@@ -173,13 +203,11 @@
 
   .hero-title {
     margin-bottom: 243px;
-    padding-top: 300px;
+    /* padding-top: 300px; */
     min-height: 270px;
     max-width: 1084px;
     box-shadow: none;
     font-size: 90px;
-    padding-left: 60px;
-    padding-right: 60px;
     width: 100%;
   }
 
@@ -190,5 +218,6 @@
   .hero-list {
     padding-bottom: 32px;
     width: 100%;
+    padding-right: 0px;
   }
 }
