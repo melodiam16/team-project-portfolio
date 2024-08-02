@@ -73,7 +73,7 @@ document.addEventListener('DOMContentLoaded', () => {
         },
         slidesPerView: 1,
         spaceBetween: 16,
-        speed: 600,
+        speed: 1500,
         breakpoints: {
           768: {
             slidesPerView: 2,
