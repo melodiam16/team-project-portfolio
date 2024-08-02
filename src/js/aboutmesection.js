@@ -37,4 +37,23 @@ new Swiper('.about-swiper', {
       loop: true,
     },
   },
+
+
 });
+
+const slides = document.querySelectorAll('.about-swiper-slide');
+let currentIndex = 0;
+
+function updateAccentColor() {
+  slides.forEach((slide, index) => {
+    slide.classList.toggle('accent-color', index === currentIndex);
+  });
+}
+
+document.querySelector('.button-next').addEventListener('click', () => {
+  currentIndex = (currentIndex + 1) % slides.length;
+  updateAccentColor();
+});
+
+updateAccentColor();
+
