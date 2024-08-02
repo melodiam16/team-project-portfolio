@@ -35,7 +35,6 @@ h2 {
 }
 
 .heading-style {
-  /* margin-top: 32px; */
   margin-bottom: 63px;
   font-family: inherit;
   font-weight: 500;
@@ -226,7 +225,7 @@ textarea:focus::placeholder {
 
   .footer::before {
     content: '';
-    position: fixed;
+    position: absolute;
     top: 0;
     right: 0;
     width: 29%;
@@ -255,23 +254,24 @@ textarea:focus::placeholder {
 
   .heading-style {
     font-size: 64px;
-    margin-top: 0;
-    margin-bottom: 64px;
+    margin-bottom: 18px;
   }
 
   .footer-form {
     margin-top: 0;
-    margin-bottom: 0;
+    margin-bottom: 18px;
     display: flex;
     flex-direction: row;
     align-items: center;
   }
 
   .footer-form-wrap {
-    margin-bottom: 78px;
+    /* margin-bottom: 78px; */
     display: flex;
     flex-direction: row;
     align-items: center;
+    padding-top: 46px;
+    padding-bottom: 60px;
   }
 
   .footer-form-email {
