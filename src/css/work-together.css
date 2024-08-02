@@ -35,7 +35,8 @@ h2 {
 }
 
 .heading-style {
-  margin-top: 32px;
+  /* margin-top: 32px; */
+  margin-bottom: 63px;
   font-family: inherit;
   font-weight: 500;
   font-size: 40px;
@@ -49,7 +50,6 @@ h2 {
 }
 
 .footer-form {
-  margin-top: 63px;
   margin-bottom: 64px;
   display: flex;
   flex-direction: column;
@@ -82,7 +82,7 @@ textarea {
   background-color: transparent;
   resize: none;
   outline: none;
-  width: 343px;
+  width: 100%;
   height: 44px;
   font-family: inherit;
   font-weight: 500;
@@ -91,6 +91,38 @@ textarea {
   letter-spacing: -0.02em;
   color: rgba(250, 250, 250, 0.6);
   overflow: hidden;
+}
+
+.footer-form-comments:not(:placeholder-shown):valid ~ .text-valid {
+  display: block;
+}
+
+.footer-form-email:not(:placeholder-shown):valid ~ .text-valid {
+  display: block;
+}
+
+.footer-form-comments:not(:placeholder-shown):invalid ~ .text-invalid {
+  display: block;
+}
+
+.footer-form-email:not(:placeholder-shown):invalid ~ .text-invalid {
+  display: block;
+}
+
+.footer-form-comments:not(:placeholder-shown):invalid {
+  border-color: #e74a3b;
+}
+
+.footer-form-email:not(:placeholder-shown):invalid {
+  border-color: #e74a3b;
+}
+
+.footer-form-email:not(:placeholder-shown):valid {
+  border-color: #3cbc81;
+}
+
+.footer-form-comments:not(:placeholder-shown):valid {
+  border-color: #3cbc81;
 }
 
 .text-truncate {
@@ -194,7 +226,7 @@ textarea:focus::placeholder {
 
   .footer::before {
     content: '';
-    position: absolute;
+    position: fixed;
     top: 0;
     right: 0;
     width: 29%;
@@ -224,7 +256,7 @@ textarea:focus::placeholder {
   .heading-style {
     font-size: 64px;
     margin-top: 0;
-    margin-bottom: 0;
+    margin-bottom: 64px;
   }
 
   .footer-form {
@@ -236,7 +268,6 @@ textarea:focus::placeholder {
   }
 
   .footer-form-wrap {
-    margin-top: 64px;
     margin-bottom: 78px;
     display: flex;
     flex-direction: row;

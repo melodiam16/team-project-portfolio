@@ -1,8 +1,8 @@
 document.addEventListener('DOMContentLoaded', function () {
-  const textarea = document.getElementById('comment');
+  const textSize = document.getElementById('email');
 
-  textarea.addEventListener('input', function () {
-    truncateTextWithEllipsis(textarea);
+  textSize.addEventListener('input', function () {
+    truncateTextWithEllipsis(textSize);
   });
 
   function truncateTextWithEllipsis(element) {
