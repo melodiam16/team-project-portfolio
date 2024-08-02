@@ -40,7 +40,7 @@ li {
 
 /* Tablet */
 
-@media screen and (min-width: 798px) {
+@media screen and (min-width: 768px) {
   .container {
     width: 768px;
     padding-left: 32px;
@@ -55,7 +55,7 @@ li {
 
 @media screen and (min-width: 1440px) {
   .container {
-    min-width: 1440px;
+    width: 1440px;
   }
 
   .section {

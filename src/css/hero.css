@@ -1,8 +1,9 @@
 .hero {
   background: url(../img/img-hero-n/gradient-mob-1x-min.png);
   background-repeat: no-repeat;
-
   background-size: 80% 100%;
+  padding-top: 281px;
+  padding-bottom: 32px;
 }
 
 @media screen and (min-device-pixel-ratio: 2),
@@ -15,17 +16,8 @@
 }
 
 .hero-container {
-  padding-top: 281px;
-  padding-bottom: 32px;
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
   margin: 0 auto;
-  padding-left: 16px;
-  padding-right: 16px;
-  width: 375px;
-}
-
-.container {
-  min-width: 375px;
 }
 
 .hero-title {
@@ -37,6 +29,7 @@
   letter-spacing: -0.03em;
   text-transform: uppercase;
   margin-bottom: 212px;
+  width: 343px;
 }
 .hero-list {
   display: flex;
@@ -77,23 +70,19 @@
 }
 
 @media screen and (min-width: 365px) {
-  .hero {
+  /* .hero {
     width: 100%;
-  }
+  } */
 }
 
 @media screen and (min-width: 768px) {
   .hero {
+    padding-top: 300px;
+    padding-bottom: 32px;
     background-image: url(../img/img-hero-n/glass-effect-tab-1x-min.png);
     background-size: 76% 100%;
   }
 
-  .hero-container {
-    width: 100%;
-    padding-top: 300px;
-    display: flex;
-    flex-direction: column;
-  }
   @media screen and (min-device-pixel-ratio: 2),
     (min-resolution: 2dppx),
     (min-resolution: 192dpi) {
@@ -106,8 +95,7 @@
     margin-bottom: 187px;
     box-shadow: none;
     font-size: 90px;
-    padding-left: 32px;
-    padding-right: 32px;
+    width: 632px;
   }
   .hero-list {
     display: flex;
@@ -140,11 +128,8 @@
   .hero {
     background-image: url(../img/img-hero-n/glass-effect-full-desk-1x-min.jpg);
     background-size: cover;
-  }
-
-  .hero-container {
-    padding-left: 178px;
-    padding-right: 178px;
+    padding-top: 300px;
+    padding-bottom: 32px;
   }
 
   @media screen and (min-device-pixel-ratio: 2),
@@ -160,7 +145,8 @@
     min-height: 270px;
     box-shadow: none;
     font-size: 90px;
-    width: 100%;
+    width: 1084px;
+    margin-left: 146px;
   }
 
   .hero-item {
@@ -168,7 +154,6 @@
   }
 
   .hero-list {
-    padding-bottom: 32px;
     width: 100%;
     padding-right: 0px;
   }
