@@ -13,7 +13,7 @@ new Accordion('.about-accordion', {
 new Swiper('.about-swiper', {
   slidesPerView: 2,
   spaceBetween: 1,
-  speed: 1000,
+  speed: 500,
   allowSlidePrev: false,
   loop: true,
   modules: [Navigation, Keyboard, Mousewheel],

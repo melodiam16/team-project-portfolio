@@ -28,7 +28,6 @@ p {
   display: flex;
   flex-direction: column;
   gap: 16px;
-  /* margin-bottom: 32px; */
 }
 
 .benefits-card-box {
@@ -62,6 +61,7 @@ p {
   padding: 18px 36px;
   color: var(--main-text);
   text-align: center;
+  margin-top: 32px;
 }
 
 @media only screen and (min-width: 768px) {
@@ -72,7 +72,7 @@ p {
     gap: 16px;
     max-width: 704px;
 
-    margin-bottom: 64px;
+    margin-bottom: 32px;
   }
 
   .benefits-card-box {

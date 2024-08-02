@@ -20,7 +20,6 @@
 .content {
   position: relative;
   box-sizing: border-box;
-  /* min-width: 320px; */
   height: 508px;
   overflow: hidden;
 }
@@ -93,7 +92,3 @@
     margin-right: 45px;
   }
 }
-
-/* @media only screen and (min-width: 1440px) {
- 
-} */
