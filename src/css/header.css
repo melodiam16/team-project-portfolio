@@ -94,6 +94,7 @@ html {
 }
 
 @media only screen and (min-width: 768px) {
+
   .header-menu-wrap {
     display: block;
     text-align: center;

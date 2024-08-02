@@ -20,8 +20,15 @@ document.addEventListener('DOMContentLoaded', () => {
       });
     });
 
-  navMenu.addEventListener('click', function () {
-    const menu = this.closest('.header-menu-wrap');
+    document.querySelectorAll('.header-menu-link, .header-order-btn').forEach(anchor => {
+        anchor.addEventListener('click', function() {
+            navMobile.classList.remove('active');
+            navMenu.closest('.header-menu-wrap').classList.remove('active');
+        });
+    });
+
+    navMenu.addEventListener('click', function() {
+        const menu = this.closest('.header-menu-wrap');
 
     if (menu) {
       menu.classList.toggle('active');
