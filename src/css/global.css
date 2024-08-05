@@ -32,10 +32,34 @@ li {
   overflow: hidden;
 }
 
+/* add mobail gum-style */
+
+@media screen and (min-width: 280px) {
+  .container {
+    width: 280px;
+  }
+  
+  .hero-container {
+    width: 280px;
+  }
+
+  .footer-container {
+    width: 280px;
+  }
+
+.img {
+  width: 275px;
+}
+
+}
+
+
+
 @media screen and (min-width: 375px) {
   .container {
     width: 375px;
   }
+ 
 }
 
 /* Tablet */
